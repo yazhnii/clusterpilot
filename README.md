@@ -157,7 +157,7 @@ Through this project, I gained practical experience in:
 
 ## Author
 
-**Yazhini S**
+**Yazhini Sankar**
 
 GitHub: https://github.com/yazhnii
 
