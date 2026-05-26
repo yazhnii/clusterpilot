@@ -36,11 +36,17 @@ This project was developed as a hands-on exploration of DevOps fundamentals, inc
 
 ```text
 clusterpilot/
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml (or your workflow file name)
 ├── Dockerfile
 ├── deployment.yaml
+├── service.yaml
 ├── package.json
 ├── package-lock.json
-├── server.js
+├── index.html
+├── app.js
+├── .gitignore
 └── README.md
 ```
 
