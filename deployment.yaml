@@ -13,8 +13,8 @@ spec:
         app: clusterpilot
     spec:
       containers:
-      - name: clusterpilot
-        image: clusterpilot
-        imagePullPolicy: Never
-        ports:
-        - containerPort: 3000
+        - name: clusterpilot
+          image: clusterpilot:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000

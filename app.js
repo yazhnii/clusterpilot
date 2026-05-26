@@ -1,13 +1,18 @@
 const express = require("express");
+const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// 👇 Serve static files (IMPORTANT)
+app.use(express.static(__dirname));
+
+// 👇 Show UI instead of JSON
 app.get("/", (req, res) => {
-  res.json({ message: "ClusterPilot API" });
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.get("/health", (req, res) => {
+app.get("/health", (req, res) => { 
   res.json({ status: "ok" });
 });
 
