@@ -38,7 +38,7 @@ This project was developed as a hands-on exploration of DevOps fundamentals, inc
 clusterpilot/
 ├── .github/
 │   └── workflows/
-│       └── ci-cd.yml (or your workflow file name)
+│       └── deploy.yml
 ├── Dockerfile
 ├── deployment.yaml
 ├── service.yaml
