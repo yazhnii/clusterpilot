@@ -2,24 +2,24 @@
 
 ## Overview
 
-ClusterPilot is a containerized web application deployed using Docker and Kubernetes. The project demonstrates core DevOps concepts including containerization, orchestration, deployment management, and service exposure using Kubernetes.
+ClusterPilot is a containerized web application designed to demonstrate modern deployment and orchestration practices using Docker and Kubernetes. The project showcases how applications can be packaged into containers, deployed as Kubernetes workloads, and exposed through Kubernetes services for scalable and reliable execution.
 
-The application is packaged as a Docker image and deployed on a local Kubernetes cluster using Docker Desktop Kubernetes.
+This project was developed as a hands-on exploration of DevOps fundamentals, including containerization, deployment management, and local Kubernetes environments.
 
 ---
 
 ## Features
 
-- Dockerized application deployment
+- Containerized application using Docker
 - Kubernetes Deployment with multiple replicas
 - Service exposure using NodePort
-- Scalable and container-based architecture
-- Local Kubernetes deployment using Docker Desktop
-- Simple and reproducible deployment workflow
+- Local deployment using Docker Desktop Kubernetes
+- Scalable architecture through Kubernetes orchestration
+- Simplified deployment workflow
 
 ---
 
-## Technology Stack
+## Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -48,12 +48,29 @@ clusterpilot/
 
 ## Prerequisites
 
-Before running this project, ensure the following tools are installed:
+Before running the project, ensure the following are installed:
 
 - Docker Desktop
 - Kubernetes (enabled in Docker Desktop)
 - kubectl
 - Node.js (optional for local development)
+
+---
+
+## Installation & Setup
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yazhnii/clusterpilot.git
+cd clusterpilot
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
 
 ---
 
@@ -87,10 +104,9 @@ http://localhost:3000
 kubectl apply -f deployment.yaml
 ```
 
-### Verify the Deployment
+### Verify Deployment
 
 ```bash
-kubectl get deployments
 kubectl get pods
 ```
 
@@ -116,43 +132,15 @@ http://localhost:<NODE_PORT>
 
 ---
 
-## Example Kubernetes Commands
-
-Check running pods:
-
-```bash
-kubectl get pods
-```
-
-Describe a pod:
-
-```bash
-kubectl describe pod <pod-name>
-```
-
-View application logs:
-
-```bash
-kubectl logs <pod-name>
-```
-
-Delete deployment:
-
-```bash
-kubectl delete deployment clusterpilot-deployment
-```
-
----
-
 ## Learning Outcomes
 
-This project provided practical experience in:
+Through this project, I gained practical experience in:
 
 - Building and managing Docker images
 - Container-based application deployment
-- Kubernetes Deployments and ReplicaSets
+- Kubernetes Deployments and Services
 - Service exposure using NodePort
-- Kubernetes troubleshooting and debugging
+- Troubleshooting container deployment issues
 - Local DevOps workflows using Docker Desktop
 
 ---
@@ -162,15 +150,14 @@ This project provided practical experience in:
 - CI/CD integration using GitHub Actions
 - Cloud deployment on AWS, Azure, or GCP
 - Kubernetes Ingress configuration
-- Monitoring and observability
+- Monitoring and logging integration
 - Automatic scaling and load balancing
-- Infrastructure as Code support
 
 ---
 
 ## Author
 
-Yazhini
+**Yazhini S**
 
 GitHub: https://github.com/yazhnii
 
@@ -178,4 +165,4 @@ GitHub: https://github.com/yazhnii
 
 ## License
 
-This project is intended for educational and learning purposes.
+This project is licensed for educational and learning purposes.
